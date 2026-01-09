@@ -141,7 +141,7 @@ export default function Home() {
       <div className="fixed inset-0 z-0">
         {isClient ? (
           <Antigravity
-            count={200}
+            count={400}
             magnetRadius={3}
             ringRadius={4}
             waveSpeed={0.5}
@@ -159,7 +159,7 @@ export default function Home() {
           />
         ) : null}
       </div>
-      <div className="relative z-10 w-full max-w-7xl mx-auto my-8 p-4 sm:p-8 rounded-lg shadow-2xl overflow-y-auto">
+      <div className="relative z-10 w-full max-w-5xl mx-auto my-8 p-4 sm:p-8 rounded-lg shadow-2xl overflow-y-auto">
         <img src="/naipic.jpg" alt="Background" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
         <div className="relative z-10">
           {/* Hero Section */}
