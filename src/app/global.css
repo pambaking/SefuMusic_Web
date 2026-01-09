@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: transparent; /* Fiery red background */
+  --foreground: 0 0% 98%;   /* White tone */
+  --card: transparent;       /* Fiery red card background */
+  --card-foreground: 0 0% 98%; /* White tone */
+  --popover: 0 50% 12%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 85% 65%;      /* Fiery red */
+  --primary-foreground: 0 0% 100%; /* White */
+  --secondary: 0 0% 14%;    /* Dark gray */
+  --secondary-foreground: 0 0% 98%; /* White tone */
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 60%; /* Lighter gray for muted text */
+  --accent: 25 95% 55%;      /* Orange accent */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;  /* A deeper red for destructive actions */
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 15%;      /* Darker border */
+  --input: 0 0% 15%;
+  --ring: 0 85% 65%;         /* Fiery red for ring */
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: #000;
+  color: hsl(var(--foreground));
+  font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom selection */
+::selection {
+  background: hsl(var(--primary) / 0.3);
+  color: hsl(var(--foreground));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-transparent text-foreground;
+  }
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
