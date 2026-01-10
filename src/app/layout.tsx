@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "Official website of Artist Name - Electronic music producer and live performer",
   icons: {
     icon: "/sefumusiclogo.png",
+    apple: "/sefumusiclogo.png",
   },
 };
 
