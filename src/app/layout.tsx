@@ -3,7 +3,7 @@ import "./global.css";
 
 
 export const metadata: Metadata = {
-  title: "Artist Name | Musician Portfolio",
+  title: "Sefu Music",
   description: "Official website of Artist Name - Electronic music producer and live performer",
 };
 
