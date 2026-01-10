@@ -160,7 +160,7 @@ export default function Home() {
         ) : null}
       </div>
       <div className="relative z-10 w-full max-w-5xl mx-auto my-8 p-4 sm:p-8 rounded-lg shadow-2xl overflow-y-auto">
-        <img src="/naipic.jpg" alt="Background" className="absolute inset-0 w-full h-full object-cover object-right rounded-lg" />
+        <img src="/naipic.jpg" alt="Background" className="absolute inset-0 w-full h-full object-cover rounded-lg" />
         <div className="relative z-10">
           {/* Hero Section */}
           <section className="relative min-h-screen flex flex-col">
