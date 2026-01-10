@@ -5,6 +5,9 @@ import "./global.css";
 export const metadata: Metadata = {
   title: "Sefu Music",
   description: "Official website of Artist Name - Electronic music producer and live performer",
+  icons: {
+    icon: "/sefumusiclogo.png",
+  },
 };
 
 export default function RootLayout({
